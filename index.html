@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FitApp - Mobile App HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <div class="container-fluid bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only" id="loading">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <div class="container-xxl position-relative">
+            <nav class="navbar nav-custom navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <img src="./img/my-tree-logo.png" alt="Logo" class="my-tree-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="#" id="nav_link_one" class="nav-item nav-link active">Home</a>
+                        <a href="#about" id="nav_link_two" class="nav-item nav-link">App</a>
+                        <a href="#feature" id="nav_link_three" class="nav-item nav-link">Funciones</a>
+                        <a href="#screens" id="nav_link_four" class="nav-item nav-link">Pantallas</a>
+                        <a href="#review" id="nav_link_five" class="nav-item nav-link">Reseñas</a>
+                        <a href="#contact" id="nav_link_six" class="nav-item nav-link">Contacto</a>
+                    </div>
+                    <div class="language-selector-box spanish-active" id="languageToggle">
+                        <div class="spanish-box"><img src="./img/spain.svg" alt="Spain Flag"></div>
+                        <div class="english-box"><img src="./img/united kingdom.svg" alt="UK Flag"></div>
+                    </div>
+                    <a href="#Descargar"
+                        class="btn btn-primary-gradient rounded-pill py-2 px-5 ms-3 d-none d-lg-block" id="nav_download_button">Descargar</a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0" id="home">
+            <div class="container-fluid bg-primary hero-header">
+                <div class="container-fluid">
+                    <img src="./img/bg-bottom.png" alt="" class="hero-header-img">
+                </div>
+                <div class="container px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-lg-8 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated slideInDown" id="hero_section_heading">Revive, comparte, y construye el legado de tu familia.</h1>
+                            <p class="text-white pb-3 animated slideInDown" id="hero_section_para">Crea un archivo vivo de tu familia donde las memorias nunca se pierden. Convierte momentos cotidianos en recuerdos eternos.</p>
+                            <a href="#" class="btn btn-hero-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">
+                                <span id="hero_section_button_one">Saber más</span>
+                            </a>
+                            <a href="#" class="btn btn-hero-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">
+                                <span id="hero_section_button_two">Contact Us</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="owl-carousel screenshot-carousel">
+                                <img class="img-fluid" src="img/screenshot-1-DqfjcT2l.png" alt="">
+                                <img class="img-fluid" src="img/screenshot-2-CmGePP3e.png" alt="">
+                                <img class="img-fluid" src="img/screenshot-3-CXt-k95_.png" alt="">
+                                <img class="img-fluid" src="img/screenshot-4-CqOlM6Gr.png" alt="">
+                                <img class="img-fluid" src="img/visualización Iphone_ my tree-02.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navbar & Hero End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5" id="about">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium" id="about_sec_mini_heading">Sobre nosotros</h5>
+                        <h1 class="mb-4" id="about_sec_heading">Más que una App</h1>
+                        <p class="mb-4" id="about_sec_para">MyTree es un puente entre generaciones que quieran compartir sus historias con
+                            sus seres queridos en cualquier momento.</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="d-flex">
+                                    <i class="fas fa-images fa-2x text-primary-gradient flex-shrink-0 mt-1"></i>
+                                    <!-- <i class="fa fa-cogs "></i> -->
+                                    <div class="ms-3">
+                                        <div class="number d-flex align-items-center">
+                                            <h2 class="m-0 p-0">+</h2>
+                                            <h2 class="mb-0" data-toggle="counter-up">1.000</h2>
+                                        </div>
+                                        <p class="text-primary-gradient mb-0" id="about_section_one">Recuerdos</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="d-flex">
+                                    <i class="fa fa-comments fa-2x text-secondary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <div class="number d-flex align-items-center">
+                                            <h2 class="m-0 p-0">+</h2>
+                                            <h2 class="mb-0" data-toggle="counter-up">3.000</h2>
+                                        </div>
+                                        <p class="text-secondary-gradient mb-0" id="about_section_two">Mensajes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3" id="about_sect_readMore">Read More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/about-CTwsdFus.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- About End -->
+
+
+        <!-- Features Start -->
+        <div class="container-xxl py-5" id="feature">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium" id="feature_mini_head">Nuestras</h5>
+                    <h1 class="mb-5" id="feature_head">Funciones principales</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4 h-100">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
+                                <i class="fa fa-eye text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3" id="feature_card_one_head">Tu muro</h5>
+                            <p class="m-0" id="feature_card_one_para">Revive, comparte y comenta los recuerdos y vivencias de tus seres queridos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4 h-100">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
+                                <i class="fas fa-calendar-check text-white fs-4"></i>
+                                <!-- <i class="fa fa-layer-group "></i> -->
+                            </div>
+                            <h5 class="mb-3" id="feature_card_two_head">Calendario</h5>
+                            <p class="m-0" id="feature_card_two_para">Agenda tus eventos o las fechas especiales y etiqueta a tus contactos para
+                                nuevas experiencias.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4 h-100">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
+                                <i class="fa fa-edit text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3"  id="feature_card_three_head">Diario</h5>
+                            <p class="m-0"  id="feature_card_three_para">Porque cada família tiene una historia que contar, anota la tuya y escribe
+                                nuevas entradas en tu diario.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4 h-100">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
+                                <i class="fa fa-shield-alt text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3" id="feature_card_four_head">Privacidad</h5>
+                            <p class="m-0" id="feature_card_four_para">Vas a poder elegir con quien compartir cada uno de tus recuerdos asegurando
+                                cualquier sensibilidad.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4 h-100">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
+                                <i class="fa fa-cloud text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3" id="feature_card_five_head">En la nube</h5>
+                            <p class="m-0" id="feature_card_five_para">Tendrás todo tu legado siempre disponible para poder rememorar cada uno de
+                                tus momentos más especiales.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4 h-100">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
+                                <i class="fa fa-mobile-alt text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3" id="feature_card_six_head">Responsive</h5>
+                            <p class="m-0" id="feature_card_six_para">Se adapta a cualquier pantalla móvil, incluyendo otros dispositivos de mayor
+                                tamaño como las tablets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+
+        <!-- Screenshot Start -->
+        <div class="container-xxl py-5" id="screens">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium" id="screen_shot_mini_head">Nuestra interfaz</h5>
+                        <h1 class="mb-4" id="screen_shot_head">Las historias que compartimos son los lazos que nos unen.</h1>
+                        <p class="mb-4" id="screen_shot_para">Por ello, se ofrece una interfaz intuitiva y simple para que cualquier
+                            generación de la familia pueda navegar sin problemas.</p>
+                        <p id="screen_list_one"><i class="fa fa-check text-primary-gradient me-3"></i>Menús y navegadores adaptados</p>
+                        <p id="screen_list_two"><i class="fa fa-check text-primary-gradient me-3"></i>Iconos reconocibles y visibles</p>
+                        <p id="screen_list_three" class="mb-4"><i class="fa fa-check text-primary-gradient me-3"></i>Procesos simples y rápidos
+                        </p>
+                        <a href="#Descargar"
+                            class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3" id="screen_button">Descargar</a>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp"
+                        data-wow-delay="0.3s">
+                        <div class="owl-carousel screenshot-carousel">
+                            <img class="img-fluid" src="img/screenshot-1-DqfjcT2l.png" alt="">
+                            <img class="img-fluid" src="img/screenshot-2-CmGePP3e.png" alt="">
+                            <img class="img-fluid" src="img/screenshot-3-CXt-k95_.png" alt="">
+                            <img class="img-fluid" src="img/screenshot-4-CqOlM6Gr.png" alt="">
+                            <img class="img-fluid" src="img/visualización Iphone_ my tree-02.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Screenshot End -->
+
+
+        <!-- Process Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium" id="process_min_heading">¿Cómo funciona?</h5>
+                    <h1 class="mb-5" id="process_heading">En 3 sencillos pasos</h1>
+                </div>
+                <div class="row gy-5 gx-4 justify-content-center">
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4 h-100">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-lower-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                                 style="width: 100px; height: 100px;">
+                                <i class="fa fa-cog fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3" id="step_one_heading">Instala la App</h5>
+                            <p class="mb-0" id="step_one_desc">Abre Google Play o Apple Store y escribe en el buscador 'MyTree'</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4 h-100">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-upper-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                                 style="width: 100px; height: 100px;">
+                                <i class="fa fa-address-card fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3" id="step_two_heading">Configura tu perfil</h5>
+                            <p class="mb-0" id="step_two_desc">Sube tu foto, tus datos e invita a todos tus conocidos para crear un legado conjunto.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4 h-100">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-lower-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                                 style="width: 100px; height: 100px;">
+                                <i class="fa fa-check fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3" id="step_three_heading">Descubre funcionalidades</h5>
+                            <p class="mb-0" id="step_three_desc">Ahora es momento de poder crear eventos, invitar, etiquetar, subir fotos o escribir a tus conocidos por mensajes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Process Start -->
+
+
+        <!-- Download Start -->
+        <div class="container-xxl py-5" id="Descargar">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="img/about-CTwsdFus.png">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <h5 class="text-primary-gradient fw-medium" id="download_min_heading">Descargar</h5>
+                        <h1 class="mb-4" id="download_heading">Descarga la utlima version</h1>
+                        <p class="mb-4" id="download_para">Instala MyTree para vivir el poder de estar conetcado con tu familia desde donde
+                            quieras para construir juntos un legado.</p>
+                        <div class="row g-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <a href="" class="d-flex bg-lower-gradient rounded py-3 px-4">
+                                    <i class="fab fa-apple fa-3x text-white flex-shrink-0"></i>
+                                    <div class="ms-3">
+                                        <p class="text-white mb-0" id="download_button_one">Disponible en</p>
+                                        <h5 class="text-white mb-0">App Store</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <a href="" class="d-flex bg-upper-gradient rounded py-3 px-4">
+                                    <i class="fab fa-android fa-3x text-white flex-shrink-0"></i>
+                                    <div class="ms-3">
+                                        <p class="text-white mb-0" id="download_button_two">Disponible en</p>
+                                        <h5 class="text-white mb-0">Play Store</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Download End -->
+
+
+        <!-- Pricing Start -->
+        <!-- <div class="container-xxl py-5" id="pricing">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Pricing Plan</h5>
+                    <h1 class="mb-5">Choose Your Plan</h1>
+                </div>
+                <div class="tab-class text-center pricing wow fadeInUp" data-wow-delay="0.1s">
+                    <ul
+                        class="nav nav-pills d-inline-flex justify-content-center bg-primary-gradient rounded-pill mb-5">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="pill" href="#tab-1">Monthly</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" href="#tab-2">Yearly</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content text-start">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Starter Plan</h4>
+                                            <span>Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top"
+                                                    style="font-size: 22px; line-height: 45px;">$</small>14.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                                    Month</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive
+                                                    Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser
+                                                    Support</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get
+                                                Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded border">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Advance Plan</h4>
+                                            <span>Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top"
+                                                    style="font-size: 22px; line-height: 45px;">$</small>24.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                                    Month</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive
+                                                    Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser
+                                                    Support</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <a href=""
+                                                class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Get
+                                                Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Premium Plan</h4>
+                                            <span>Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top"
+                                                    style="font-size: 22px; line-height: 45px;">$</small>34.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                                    Month</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive
+                                                    Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser
+                                                    Support</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get
+                                                Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Starter Plan</h4>
+                                            <span>Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top"
+                                                    style="font-size: 22px; line-height: 45px;">$</small>114.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                                    Yearly</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive
+                                                    Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser
+                                                    Support</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get
+                                                Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded border">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Advance Plan</h4>
+                                            <span>Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top"
+                                                    style="font-size: 22px; line-height: 45px;">$</small>124.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                                    Yearly</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive
+                                                    Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser
+                                                    Support</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get
+                                                Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Premium Plan</h4>
+                                            <span>Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top"
+                                                    style="font-size: 22px; line-height: 45px;">$</small>134.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                                    Yearly</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive
+                                                    Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser
+                                                    Support</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get
+                                                Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Pricing End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5" id="review">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium" id="testimon_mini_head">Testimonios</h5>
+                    <h1 class="mb-5" id="testimon_head">Hablan de nosotros</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-1.jpg"
+                                style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1 testimon_one_name" id="">Marta Sánchez</h5>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0 testimon_one_head" id="">¡Excelente para organizar las actividades familiares!</p>
+                        <p class="mb-0 testimon_one_para" id="">Me encanta esta app, nos ayuda a toda la familia a estar sincronizados con
+                            nuestras tareas y eventos. Los recordatorios son súper útiles, y la función de listas
+                            compartidas es perfecta para organizar las compras. ¡Muy recomendada para familias ocupadas!
+                        </p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-2.jpg"
+                                style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1 testimon_two_name" id="">Francisco Pérez</h5>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0 testimon_two_head" id="">Muy útil, pero puede mejorar</p>
+                        <p class="mb-0 testimon_two_para" id="">Es una herramienta práctica para mantenernos conectados y organizados. Sin
+                            embargo, me gustaría que agregaran más opciones de personalización, como colores para cada
+                            miembro de la familia o temas diferentes. Aparte de eso, funciona muy bien.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-3.jpg"
+                                style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1 testimon_three_name" id="">David Martínez</h5>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0 testimon_three_head" id="">Buena idea, me gusta</p>
+                        <p class="mb-0 testimon_three_para" id="">La app tiene funciones interesantes, de momento estoy invitando a mis
+                            familiares, seguro que les daré una alegría para poder estar en contacto el vivir fuera del
+                            país.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-4.jpg"
+                                style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1 testimon_four_name" id="">Nuria Rodríguez</h5>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0 testimon_four_head" id="">¡Nuestra aliada diaria!</p>
+                        <p class="mb-0 testimon_four_para" id="">Desde que la usamos, la comunicación en casa ha mejorado mucho. Nos encantan las
+                            alertas para tareas repetitivas y el calendario compartido. Además, es muy fácil de usar,
+                            incluso para los abuelos. ¡10/10!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Contact Start -->
+        <div class="container-xxl py-5" id="contact">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium" id="contact_mini_head">Contacto</h5>
+                    <h1 class="mb-5" id="contact_head">¿Tienes dudas?</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="wow fadeInUp" data-wow-delay="0.3s">
+                            <p class="text-center mb-4" id="contact_para">Envía un mensaje con tus propuestas, dudas y estaremos
+                                encantados de leerte para contestar en el menor tiempo posible. <a href="#">Descarga
+                                    ahora</a>.</p>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <label for="name" id="label_one">Tu Nombre</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Your Email">
+                                            <label for="email" id="label_two">Tu Email</label>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div> -->
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a message here"
+                                                id="message" style="height: 150px"></textarea>
+                                            <label id="label_three" for="message">Mensaje</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn-primary-gradient rounded-pill py-3 px-5"
+                                            type="submit" id="contact_button">Enviar Mensaje</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container-fluid">
+                <img src="./img/bg-top.png" alt="" class="footer-img">
+            </div>
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 justify-content-around">
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4" id="footer_heading_one">Dirección</h4>
+                        <p id="footer_location"><i class="fa fa-map-marker-alt me-3"></i>Barcelona, Spain.</p>
+                        <p id="footer_email"><i class="fa fa-envelope me-3"></i>hola@mytreefam.com</p>
+                        <p  id="footer_insta"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                                class="_icon_mxvnc_117 me-3" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                </path>
+                            </svg>@mytreeappofficial</p>
+                        <div class="d-flex pt-2">
+                            <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a> -->
+                            <!-- <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/mytreeappofficial/"><i class="fab fa-instagram"></i></a> -->
+                            <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4" id="footer_heading_two">Links rápidos</h4>
+                        <a class="btn btn-link" id="foot_link_one" href="#">Home</a>
+                        <a class="btn btn-link" id="foot_link_two" href="#about">App</a>
+                        <a class="btn btn-link" id="foot_link_three" href="#feature">Funciones</a>
+                        <a class="btn btn-link" id="foot_link_four" href="#screens">Pantallas</a>
+                        <a class="btn btn-link" id="foot_link_five" href="#review">Reseñas</a>
+                        <a class="btn btn-link" id="foot_link_six" href="#contact">Contacto</a>
+                    </div>
+                    <!-- <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Popular Link</h4>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <a class="btn btn-link" href="">Career</a>
+                    </div> -->
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4" id="news_letter_heading">Hoja informativa</h4>
+                        <p id="news_letter_para">Subscribete a nuestro boletín de noticias</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" id="news_letter_email_input"
+                                placeholder="Tu Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                    class="fa fa-paper-plane text-primary-gradient fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0" id="copy_right_text">
+                            &copy; <a class="border-bottom" href="#">My Tree</a>, Todos los derechos reservados.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="" id="terms_and_conditions">Términos y condiciones</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
+</body>
+
+</html>
